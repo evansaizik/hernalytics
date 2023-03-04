@@ -26,7 +26,6 @@ const Main = () => {
         </Box>
         <MainMenu />
       </Flex>
-      
     </>
   );
 };

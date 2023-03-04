@@ -7,6 +7,13 @@ import {
   MenuItem,
   MenuDivider,
   HStack,
+  Card,
+  Grid,
+  CardHeader,
+  Flex,
+  CardBody,
+  Heading,
+  Avatar,
 } from "@chakra-ui/react";
 
 import { ChevronDownIcon } from "@chakra-ui/icons";
@@ -16,7 +23,7 @@ const Navbar = () => {
     display: "inline",
     textAlign: "center",
     color: "white",
-    p: '0',
+    p: "0",
     fontSize: ".9rem",
     fontWeight: "800",
     w: "fit-content",
@@ -61,12 +68,98 @@ const Navbar = () => {
         <MenuButton as={Button} sx={menuStyle} rightIcon={<ChevronDownIcon />}>
           OUR COMMUNITIES
         </MenuButton>
-        <MenuList>
-          <MenuItem>Pre-Election</MenuItem>
-          <MenuDivider m="0" color="#C6C7CB" />
-          <MenuItem>Election Day Live Updates</MenuItem>
-          <MenuDivider m="0" color="#C6C7CB" />
-          <MenuItem>Post-Election Analysis</MenuItem>
+        <MenuList borderRadius="none" w="780px">
+          <Grid templateColumns="repeat(2, 1fr)" gap={2}>
+            <Card
+              border="none"
+              w="370px"
+              boxShadow="none"
+              h="70px"
+              px="20px"
+              py="10px"
+            >
+              <Flex gap="20px">
+                <CardHeader p="0">
+                  <Avatar w="40px" h="40px" borderRadius="3px"></Avatar>
+                </CardHeader>
+                <CardBody p="0">
+                  <Heading fontSize="18px" lineHeight="27px">
+                    General User
+                  </Heading>
+                  <Text fontSize={".8rem"}>
+                    Odio mi in id tellus turpis elementum ipsum.
+                  </Text>
+                </CardBody>
+              </Flex>
+            </Card>
+
+            <Card
+              border="none"
+              w="370px"
+              boxShadow="none"
+              h="70px"
+              px="20px"
+              py="10px"
+            >
+              <Flex gap="20px">
+                <CardHeader p="0">
+                  <Avatar w="40px" h="40px" borderRadius="3px"></Avatar>
+                </CardHeader>
+                <CardBody p="0">
+                  <Heading fontSize="18px" lineHeight="27px">
+                    Election Candidates
+                  </Heading>
+                  <Text fontSize={".8rem"}>
+                    Odio mi in id tellus turpis elementum ipsum.
+                  </Text>
+                </CardBody>
+              </Flex>
+            </Card>
+            <Card
+              border="none"
+              w="370px"
+              boxShadow="none"
+              h="70px"
+              px="20px"
+              py="10px"
+            >
+              <Flex gap="20px">
+                <CardHeader p="0">
+                  <Avatar w="40px" h="40px" borderRadius="3px"></Avatar>
+                </CardHeader>
+                <CardBody p="0">
+                  <Heading fontSize="18px" lineHeight="27px">
+                    Decide to Run {' (DTR)'}
+                  </Heading>
+                  <Text fontSize={".8rem"}>
+                    Odio mi in id tellus turpis elementum ipsum.
+                  </Text>
+                </CardBody>
+              </Flex>
+            </Card>
+            <Card
+              border="none"
+              w="370px"
+              boxShadow="none"
+              h="70px"
+              px="20px"
+              py="10px"
+            >
+              <Flex gap="20px">
+                <CardHeader p="0">
+                  <Avatar w="40px" h="40px" borderRadius="3px"></Avatar>
+                </CardHeader>
+                <CardBody p="0">
+                  <Heading fontSize="18px" lineHeight="27px">
+                    Reporters
+                  </Heading>
+                  <Text fontSize={".8rem"}>
+                    Odio mi in id tellus turpis elementum ipsum.
+                  </Text>
+                </CardBody>
+              </Flex>
+            </Card>
+          </Grid>
         </MenuList>
       </Menu>
 
