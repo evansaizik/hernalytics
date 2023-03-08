@@ -1,4 +1,4 @@
-import { Box, Grid, Text, Flex } from "@chakra-ui/react";
+import { Box, Text, Flex } from "@chakra-ui/react";
 import map from "../Assets/map.svg";
 // import donutChart from "../Assets/pieChart.svg";
 // import legend from "../Assets/legend.svg";
