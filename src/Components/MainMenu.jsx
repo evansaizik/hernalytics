@@ -68,7 +68,7 @@ const MainMenu = () => {
           rightIcon={<ChevronDownIcon />}
           color="#C6C7CB"
         >
-          Governorship
+          Presidential
         </MenuButton>
         <MenuList sx={menuList}>
           <MenuItem sx={menuItem}>Presidential</MenuItem>

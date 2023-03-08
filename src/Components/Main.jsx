@@ -5,6 +5,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import MainMenu from "./MainMenu";
+import StatsBar from "./StatsBar";
 
 const Main = () => {
 
@@ -26,6 +27,7 @@ const Main = () => {
         </Box>
         <MainMenu />
       </Flex>
+      <StatsBar />
     </>
   );
 };
