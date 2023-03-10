@@ -33,25 +33,6 @@ const Navbar = () => {
     },
   };
 
-  // const menuList = {
-  //   bg: "#1C2031",
-  //   w: "264px",
-  //   h: "30px",
-  //   maxHeight: "2rem",
-  //   overFlow: "scroll",
-  //   px: "0",
-  //   color: "#C6C7CB",
-  //   py: "0",
-  //   border: "none",
-  //   _hover: {
-  //     bg: "#1C2031",
-  //   },
-  // };
-
-  // const menuItem = {
-  //   bg: "#1C2031",
-  // };
-
   const styles = {
     display: "inline",
     textAlign: "center",
