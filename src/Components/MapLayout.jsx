@@ -113,7 +113,6 @@ const MapLayout = () => {
           Results
         </Text>
         <Text fontSize="lg" color="white">
-          {/* State: {result.length > 0 ? result[0].name : ""} */}
           State: {statename}
         </Text>
         <Text fontSize="lg" color="white">
