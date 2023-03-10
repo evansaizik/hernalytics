@@ -16,7 +16,6 @@ const StatsBar = () => {
     .map((candidate) => candidate.candidates_vote)
     .reduce((cur, total) => cur + total, 0);
 
-  console.log(totalVotes);
   useEffect(() => {
     const getData = async () => {
       try {
