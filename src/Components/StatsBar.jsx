@@ -8,6 +8,9 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import peter from '../Assets/peter.jpg'
+import atiku from '../Assets/atiku.JPG'
+import tinubu from '../Assets/tinubu.JPG'
 
 const StatsBar = () => {
   const [candidates, setCandidates] = useState([]);
@@ -70,11 +73,12 @@ const StatsBar = () => {
                       alignItems="center"
                     >
                       <Avatar
+                        src={candidate.full_name === 'Atiku'? atiku : candidate.full_name === 'Peter Obi'? peter : candidate.full_name === 'Tinubu'? tinubu : ""}
                         w="40px"
                         h="40px"
                         borderRadius="none"
                         name={candidate.full_name}
-                      ></Avatar>
+                      />
                       <Box ml="0">
                         <Text color="blue.500">
                           {candidate.full_name},{" "}
