@@ -7,6 +7,7 @@ import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 const MapLayout = () => {
   const [mapData, setMapData] = useState([]);
   const [result, setResult] = useState([]);
+  const [statename, setStatename] = useState('');
   const newData = mapData.map((el) => {
     return {
       id: el.id,
@@ -79,9 +80,11 @@ const MapLayout = () => {
                 layer.setStyle({
                   fillOpacity: ".7",
                 });
+                const stateName = state.properties.admin1Name
                 const stateDetails = newData.filter(
                   (el) => el.name === state.properties.admin1Name.toUpperCase()
                 );
+                setStatename(stateName)
                 setResult(stateDetails);
               },
               mouseout: (e) => {
@@ -110,7 +113,8 @@ const MapLayout = () => {
           Results
         </Text>
         <Text fontSize="lg" color="white">
-          State: {result.length > 0 ? result[0].name : ""}
+          {/* State: {result.length > 0 ? result[0].name : ""} */}
+          State: {statename}
         </Text>
         <Text fontSize="lg" color="white">
           Number of votes: {result.length > 0 ? result[0].votes : ""}
